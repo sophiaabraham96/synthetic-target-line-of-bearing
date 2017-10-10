@@ -20,7 +20,7 @@
 
 
 
-image = '/root/models/research/object_detection/test_images/image1.jpg'
+#image = '/root/models/research/object_detection/test_images/image1.jpg'
 
 
 # for image_path in TEST_IMAGE_PATHS:
@@ -222,7 +222,7 @@ def objectAOB(image, aov, ch):
     return;
 
 
-objectAOB(image, 122, 180)
+#objectAOB(image, 122, 180)
 
 
 
