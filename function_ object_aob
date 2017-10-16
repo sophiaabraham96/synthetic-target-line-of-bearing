@@ -2,10 +2,23 @@
 #
 # Overview
 # ------------------------------------------------------------
-# Function to identify person angel of bearing from an image. The
-# person object is identified by highest object person confidence.
-# Google states it is faster than Yolo
+# Function to identify person line of bearing from the device in an
+# image. The person object is identified by highest object person confidence.
+# Google states SSD:(Single Shot MultiBox Detector) is a little better Yolo and 
+# faster than Yolo
+# 
+# Model 
+#-------------------------------------------------------------
+# SSD:(Single Shot MultiBox Detector)
 #
+# Pros
+# - Fast
+# - Robust to different resolutions and aspect ratios 
+# - Easy to train
+# Cons
+# - Less Accuracy
+# - Difficult to classify categories that a similar like animals
+# 
 # Input
 # -----------------------------------------------------------
 # image = image location( test only with jpg format)
