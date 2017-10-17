@@ -1,4 +1,4 @@
-# synthetic-target-line-of-sight
+# synthetic-target-line-of-bearing
 
 Create function to provide angle of bearing for person in an image. The following code was created using both the Nvidia and Tensorflow docker. The code should work if only using CPU but will still need to install tensorflow
 
