@@ -8,7 +8,7 @@
 # faster than Yolo
 # 
 # Model 
-#-------------------------------------------------------------
+#-----------------------------------------------------0--------
 # SSD:(Single Shot MultiBox Detector)
 #
 # Pros
@@ -54,13 +54,19 @@ from io import StringIO
 from matplotlib import pyplot as plt
 from PIL import Image
 
-class ObjectAoB:
+import json
+import base64
+
+class imageProcessor:
 
     # In[ ]:
-    def personAoB(image, fov, ch):
-        # # Imports package
-    
-    
+    def personAoB(self, inputData): # inputData is image, fov, compass hdg
+        ins = json.loads(inputData)
+        fov = ins["CameraFoV"]
+        ch = ins["CompassHdg"]
+
+        image = base64.decodestring(bytes(ins["ImageEncoded"], 'utf-8'))
+        
         # Allocate GPU memory
         config = tf.ConfigProto()
         config.gpu_options.allow_growth = True
@@ -75,7 +81,7 @@ class ObjectAoB:
         # get_ipython().magic(u'matplotlib inline')
     
         # This is needed since the notebook is stored in the object_detection folder.
-        sys.path.append("..")
+#        sys.path.append("..")
     
         # ## Object detection imports
         # Here are the imports from the object detection module.
@@ -83,10 +89,10 @@ class ObjectAoB:
         # In[ ]:
     
     
-        from utils import label_map_util
-    
-        from utils import visualization_utils as vis_util
-    
+#         from utils import label_map_util
+#     
+#         from utils import visualization_utils as vis_util
+#     
         # # Model preparation
     
         # ## Variables
@@ -233,9 +239,9 @@ class ObjectAoB:
         AOB = df7 + ch
     
         # Print AOB
-        print AOB
+        #print AOB
     
-        return;
+        return AOB;
     
     
     #objectAOB(image, 122, 180)
