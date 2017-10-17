@@ -26,4 +26,5 @@ Create function to provide angle of bearing for person in an image. The followin
 * Tensorflow docker container https://github.com/tensorflow/tensorflow.git
 * Nvidia docker https://github.com/NVIDIA/nvidia-docker
         - This will be needed if you want to use the gpu for this script
+* need to update python package protobuf to 3.4.1 - I used code "pip install protobuf --upgrade"  
 
