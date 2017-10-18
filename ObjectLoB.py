@@ -57,10 +57,10 @@ from PIL import Image
 import json
 import base64
 
-class ObjectLoB:
+class PersonLoB:
 
     # In[ ]:
-    def personLoB(self, inputData): # inputData is image, fov, compass hdg
+    def __init__(self, inputData): # inputData is image, fov, compass hdg
         ins = json.loads(inputData)
         fov = ins["CameraFoV"]
         ch = ins["CompassHdg"]
