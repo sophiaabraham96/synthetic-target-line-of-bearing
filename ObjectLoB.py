@@ -60,7 +60,7 @@ import base64
 class imageProcessor:
 
     # In[ ]:
-    def personAoB(self, inputData): # inputData is image, fov, compass hdg
+    def personLoB(self, inputData): # inputData is image, fov, compass hdg
         ins = json.loads(inputData)
         fov = ins["CameraFoV"]
         ch = ins["CompassHdg"]
