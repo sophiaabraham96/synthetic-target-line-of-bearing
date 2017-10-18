@@ -3,7 +3,7 @@
 Create function to provide angle of bearing for person in an image. The following code was created using both the Nvidia and Tensorflow docker. The code should work if only using CPU but will still need to install tensorflow
 
 ## Discussion
-The model chosen to perform object recognition was SSD: Single Shot MultiBox Detector https://research.google.com/pubs/pub44872.html. This model was chosen since it has low computation and is felixible to low resolution images to provide a near real time object dection. The training data set that was chosen is the COCO datset since it is best for object recogition for small objects within the image. The currenlt method to identify object angle uses the input parameter of line of bearing of camera and field of view of camera. Simple math operations are performed to derive object angle from the center of the image.
+The model chosen to perform object recognition was SSD: Single Shot MultiBox Detector https://research.google.com/pubs/pub44872.html. This model was chosen since it has low computation and is felixible to low resolution images to provide a near real time object dection. The COCO datasetwas chose for training since it is best for object recogition fon small objects within image. The currenlt method to identify object angle uses the input parameter of line of bearing of camera and field of view of camera. Simple math operations are performed to derive object angle from the center of the image.
 
 ## Dependencies
 
