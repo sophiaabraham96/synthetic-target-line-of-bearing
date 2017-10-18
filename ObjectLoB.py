@@ -62,10 +62,10 @@ class PersonLoB:
     # In[ ]:
     def __init__(self, inputData): # inputData is image, fov, compass hdg
         ins = json.loads(inputData)
-        fov = ins["CameraFoV"]
-        ch = ins["CompassHdg"]
+        fov = ins["fov"]
+        ch = ins["compass"]
 
-        image = base64.decodestring(bytes(ins["ImageEncoded"], 'utf-8'))
+        image = base64.decodestring(bytes(ins["image"], 'utf-8'))
         
         # Allocate GPU memory
         config = tf.ConfigProto()
