@@ -57,7 +57,7 @@ from PIL import Image
 import json
 import base64
 
-class imageProcessor:
+class ObjectLoB:
 
     # In[ ]:
     def personLoB(self, inputData): # inputData is image, fov, compass hdg
