@@ -5,6 +5,9 @@ Create function to provide angle of bearing for person in an image. The followin
 ## Discussion
 The model chosen to perform object recognition was SSD: Single Shot MultiBox Detector https://research.google.com/pubs/pub44872.html. This model was chosen since it has low computation and is felixible to low resolution images to provide a near real time object dection. The COCO dataset was chosen for training since it is best for object recogition for small objects within image. The currenlt method to identify object angle uses the input parameter of line of bearing of camera and field of view of camera. Simple math operations are performed to derive object angle from the center of the image.
 
+## Contribution
+This is the first iteration of this project. Please feel free to contribute to this project by providing issue notificaitons, suggestions of methodology improvements, or suggestions of any kind. Please fork this project first before you make updates to this code. 
+
 ## Dependencies
 
 #### Python Packages
